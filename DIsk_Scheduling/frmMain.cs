@@ -13,7 +13,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace DIsk_Scheduling
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         private int Win_Width = 1920;
         private int Win_Height = 1080;
@@ -36,7 +36,7 @@ namespace DIsk_Scheduling
 
         private Image Play_IMG = Properties.Resources.play;
         private Image Pause_IMG = Properties.Resources.pause;
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
             this.Size = new Size(Win_Width, Win_Height);
@@ -652,6 +652,17 @@ namespace DIsk_Scheduling
                 btnRedo.Enabled = true;
                 btnPause.Enabled = true;
             }
+        }
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout aboutForm = new frmAbout();
+            aboutForm.ShowDialog();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHelp helpForm = new frmHelp();
+            helpForm.ShowDialog();
         }
     }
 }

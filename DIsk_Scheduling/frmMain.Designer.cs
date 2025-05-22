@@ -1,6 +1,6 @@
 ﻿namespace DIsk_Scheduling
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,12 +119,14 @@
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.aboutUsToolStripMenuItem.Text = "About us";
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // TabControl
             // 
@@ -558,7 +560,7 @@
             this.panel_Graph.Location = new System.Drawing.Point(7, 41);
             this.panel_Graph.Margin = new System.Windows.Forms.Padding(0);
             this.panel_Graph.Name = "panel_Graph";
-            this.panel_Graph.Size = new System.Drawing.Size(2511, 799);
+            this.panel_Graph.Size = new System.Drawing.Size(2511, 779);
             this.panel_Graph.TabIndex = 3;
             this.panel_Graph.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Graph_Paint);
             // 
@@ -570,7 +572,7 @@
             this.gb_Graph.Location = new System.Drawing.Point(7, 6);
             this.gb_Graph.Margin = new System.Windows.Forms.Padding(4);
             this.gb_Graph.Name = "gb_Graph";
-            this.gb_Graph.Padding = new System.Windows.Forms.Padding(7, 6, 7, 10);
+            this.gb_Graph.Padding = new System.Windows.Forms.Padding(7, 6, 7, 30);
             this.gb_Graph.Size = new System.Drawing.Size(2525, 850);
             this.gb_Graph.TabIndex = 0;
             this.gb_Graph.TabStop = false;
@@ -635,17 +637,18 @@
             this.panel1.Size = new System.Drawing.Size(2539, 1281);
             this.panel1.TabIndex = 5;
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2539, 1281);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulator Disk Scheduling";
             this.menuStrip1.ResumeLayout(false);
