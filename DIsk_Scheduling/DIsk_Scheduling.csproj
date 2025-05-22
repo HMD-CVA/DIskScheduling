@@ -117,6 +117,15 @@
   <ItemGroup>
     <None Include="Resources\play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guide.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

@@ -110,21 +110,24 @@
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutUsToolStripMenuItem,
             this.helpToolStripMenuItem});
+            this.aboutToolStripMenuItem.Image = global::DIsk_Scheduling.Properties.Resources.information;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(75, 27);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // aboutUsToolStripMenuItem
             // 
+            this.aboutUsToolStripMenuItem.Image = global::DIsk_Scheduling.Properties.Resources.aboutUS;
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.aboutUsToolStripMenuItem.Text = "About us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.Image = global::DIsk_Scheduling.Properties.Resources.guide;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
