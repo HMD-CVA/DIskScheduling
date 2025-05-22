@@ -66,6 +66,10 @@ namespace DIsk_Scheduling
         }
         private bool UserInput()
         {
+            xData.Clear();
+            paintQueue.Clear();
+            result.Clear();
+            requestQueue.Clear();
             if (txt_HeadValue.Text == string.Empty || txt_Input.Text == string.Empty)
             {
                 MessageBox.Show("Please type enough input to start", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -567,7 +571,6 @@ namespace DIsk_Scheduling
             currentStep = 0;
             isAnimating = true; // bắt đầu animation
             panel_Graph.Invalidate();
-            
         }
         private void txt_HeadValue_TextChanged(object sender, EventArgs e)
         {
@@ -658,11 +661,14 @@ namespace DIsk_Scheduling
             frmAbout aboutForm = new frmAbout();
             aboutForm.ShowDialog();
         }
-
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmHelp helpForm = new frmHelp();
             helpForm.ShowDialog();
+        }
+        private void frmMain_Resize(object sender, EventArgs e)
+        {
+            panel_Graph.Invalidate();
         }
     }
 }

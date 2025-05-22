@@ -117,14 +117,14 @@
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.aboutUsToolStripMenuItem.Text = "About us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
@@ -373,6 +373,7 @@
             // 
             // btnUndo
             // 
+            this.btnUndo.BackColor = System.Drawing.Color.Transparent;
             this.btnUndo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUndo.Enabled = false;
             this.btnUndo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,7 +384,7 @@
             this.btnUndo.Size = new System.Drawing.Size(150, 150);
             this.btnUndo.TabIndex = 3;
             this.btnUndo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUndo.UseVisualStyleBackColor = true;
+            this.btnUndo.UseVisualStyleBackColor = false;
             this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
             // btnRedo
@@ -651,6 +652,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulator Disk Scheduling";
+            this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.TabControl.ResumeLayout(false);

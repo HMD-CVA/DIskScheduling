@@ -54,6 +54,7 @@ namespace DIsk_Scheduling
                 "Thank you for using Disk Scheduling Simulator!";
             
             txtAboutUs.Text = aboutText;
+            txtAboutUs.Focus();
         }
     }
 }
