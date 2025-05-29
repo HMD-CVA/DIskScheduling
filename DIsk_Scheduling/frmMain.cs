@@ -121,7 +121,7 @@ namespace DIsk_Scheduling
        
             if (!btn_FCFS.Checked && !btn_SSTF.Checked && !btn_Scan.Checked && !btn_cscan.Checked && !btn_clook.Checked && !btn_Look.Checked)
             {
-                MessageBox.Show("Please select type to start", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please select ALGORITHM to start!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -137,7 +137,7 @@ namespace DIsk_Scheduling
             {
                 if (!btn_ToLeft.Checked && !btn_ToRight.Checked)
                 {
-                    MessageBox.Show("Please choose type", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please choose LEFT OR RIGHT HEAD POSITION to start!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (btn_Scan.Checked)
